@@ -39,10 +39,10 @@ void Unit::attack(Unit *)
 int Unit::hurt(Unit *e)
 {
     this->hp -= e->getAp(); // if dead
-    if (this->hp <= 0)
-    {
-        delete this;
-        return 0;
-    }
+    //if (this->hp <= 0)
+    //{
+    //    delete this;
+    //    return 0;
+    //}
     return this->hp;
 }
